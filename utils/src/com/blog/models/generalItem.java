@@ -1,4 +1,4 @@
-package src.main.java.com.blog.models;
+package src.com.blog.models;
 
 /**
  * Created by travismartin on 15-10-18.

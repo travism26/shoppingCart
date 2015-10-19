@@ -1,4 +1,4 @@
-package src.main.java.com.blog.models;
+package src.com.blog.models;
 
 public class tshirt extends generalItem {
 

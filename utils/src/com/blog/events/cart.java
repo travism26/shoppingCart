@@ -1,7 +1,7 @@
-package com.blog.events;
+package src.com.blog.events;
 
-import com.blog.models.IShopingItem;
-import com.blog.models.tshirt;
+import src.com.blog.models.IShopingItem;
+import src.com.blog.models.tshirt;
 
 import java.util.ArrayList;
 
