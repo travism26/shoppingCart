@@ -12,6 +12,7 @@
 hs_err_pid*
 
 .gradle/
+gradle/
 utils/.*
 web/.*
 utils/build/*
