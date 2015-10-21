@@ -7,7 +7,16 @@ import java.util.ArrayList;
 
 public class cart {
 
-    public ArrayList<IShopingItem> shopingList;
+
+    public ArrayList<IShopingItem> shoppingList;
+
+    public void addToCart(IShopingItem item) {
+
+    }
+
+    public void removeItem(IShopingItem item) {
+
+    }
 
     public static void main(String[] args) {
 

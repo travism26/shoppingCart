@@ -5,5 +5,8 @@ package src.com.blog.eventStore;
  */
 public interface IRepository {
 
-    public Object saveEvent();
+    public void saveEvent(Object model);
+
+    public void updateEvent(Object model);
+
 }
