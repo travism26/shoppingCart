@@ -6,12 +6,12 @@ package src.com.blog.eventStore;
 public class InMemoryUserRepository implements IRepository {
 
     @Override
-    public Object saveEvent(Object model) {
-        return null;
+    public void saveEvent(Object model) {
+
     }
 
     @Override
-    public Object updateEvent(Object model) {
-        return null;
+    public void updateEvent(Object model) {
+
     }
 }
