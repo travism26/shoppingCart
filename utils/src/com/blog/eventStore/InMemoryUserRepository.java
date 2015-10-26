@@ -7,7 +7,7 @@ public class InMemoryUserRepository implements IRepository {
 
     @Override
     public void saveEvent(Object model) {
-
+        
     }
 
     @Override

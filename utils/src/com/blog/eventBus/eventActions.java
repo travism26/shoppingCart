@@ -6,10 +6,17 @@ package src.com.blog.eventBus;
  */
 public class eventActions {
 
-    //get user information, who is this person?
-    //what is the user trying to do?
-    //what action should we execute?
-    //what table is being accessed for an append?
-
-
+    /*
+     * this class will be a base class for the actions performed
+     * on the models. for example: User.processEvent(User, createAction, HashMap<String, String> details);
+     */
 }
+
+/*
+ * NOTES:
+ */
+//get user information, who is this person?
+//get some user session data.
+//what is the user trying to do?
+//what action should we execute?
+//what table is being accessed for an append?
