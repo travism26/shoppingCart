@@ -1,6 +1,6 @@
 package src.com.blog.models;
 
-import src.com.blog.eventBus.eventActions;
+import src.com.blog.eventBus.actions.eventActions;
 
 /**
  * Created by travismartin on 15-10-20.
