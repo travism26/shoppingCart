@@ -5,9 +5,10 @@ package src.com.blog.eventBus.actions;
  */
 public class createAction implements IEventAction
 {
+
     @Override
     public void executeAction()
     {
-        
+
     }
 }
