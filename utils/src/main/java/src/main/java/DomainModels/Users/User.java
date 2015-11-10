@@ -1,6 +1,6 @@
-package src.com.blog.models.userData;
+package src.main.java.DomainModels.Users;
 
-import src.com.blog.models.baseModel;
+import src.main.java.DomainModels.baseModel;
 
 /**
  * Created by travismartin on 15-10-20.

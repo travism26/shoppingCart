@@ -1,4 +1,4 @@
-package src.com.blog.eventBus.actions;
+package src.main.java.Messages.eventBus.actions;
 
 /**
  * Created by travismartin on 15-10-20.
@@ -9,7 +9,7 @@ public interface IEventAction {
     public void executeAction();
     /*
      * this class will be a base class for the actions performed
-     * on the models. for example creating a new user pass in the create action.
+     * on the DomainModels. for example creating a new user pass in the create action.
      * separating out the types of actions will help us swap out functionality to make
      * it easier to enhance behavior.
      * User someUser = new User(!DATA!);
@@ -21,7 +21,7 @@ public interface IEventAction {
 /*
  * NOTES:
  */
-//get user information, who is this person?
+//get user information, who is this Users?
 //get some user session data.
 //what is the user trying to do?
 //what action should we execute?

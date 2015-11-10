@@ -1,4 +1,4 @@
-package src.com.blog.models;
+package src.main.java.DomainModels;
 
 public interface IShopingItem {
 

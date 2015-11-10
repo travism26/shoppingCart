@@ -1,4 +1,4 @@
-package src.com.blog.models.userData;
+package src.main.java.DomainModels.Users;
 
 /**
  * Created by travismartin on 15-10-22.
