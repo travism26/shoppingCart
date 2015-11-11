@@ -8,14 +8,68 @@ import src.main.java.DomainModels.baseModel;
 public class User extends baseModel
 {
 
-    private String username, firstName, lastName;
+    private String username, firstName, lastName, email;
     private long id;
 
-    public User(String username, String firstName, String lastName)
+    public User(String username, String firstName, String lastName, String email)
     {
+        //should create a global event.
+        //RaiseEvent(Model, Some Data, Some Data, Some Data);
+        //OR
+        //RaiseEvent(Model, IMandatoryData, IOptionalData);
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.email = email;
     }
 
+    public String getUsername()
+    {
+        return username;
+    }
+
+    public void setUsername(String username)
+    {
+        this.username = username;
+    }
+
+    public String getEmail()
+    {
+        return email;
+    }
+
+    public void setEmail(String email)
+    {
+        this.email = email;
+    }
+
+    public String getLastName()
+    {
+        return lastName;
+    }
+
+    public void setLastName(String lastName)
+    {
+        this.lastName = lastName;
+    }
+
+    public String getFirstName()
+    {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName)
+    {
+        this.firstName = firstName;
+    }
+
+    public long getId()
+    {
+        return id;
+    }
+
+    public void setId(long id)
+    {
+        this.id = id;
+    }
 }

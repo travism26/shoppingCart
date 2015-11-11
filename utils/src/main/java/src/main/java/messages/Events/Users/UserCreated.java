@@ -7,4 +7,5 @@ import src.main.java.Messages.IEvent;
  */
 public class UserCreated implements IEvent
 {
+    
 }
