@@ -11,5 +11,10 @@ import java.util.ArrayList;
 public class cart extends baseModel
 {
     private ArrayList<IShopingItem> items;
-    
+
+    @Override
+    public void handleEvent()
+    {
+
+    }
 }

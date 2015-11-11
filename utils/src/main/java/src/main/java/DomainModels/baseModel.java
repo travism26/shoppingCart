@@ -3,7 +3,7 @@ package src.main.java.DomainModels;
 /**
  * Created by travismartin on 15-10-20.
  */
-public class baseModel
+abstract public class baseModel
 {
-    private IEventAction eventHandler;
+    abstract public void handleEvent();
 }

@@ -1,9 +1,11 @@
 package src.main.java.DomainModels.Users;
 
+import src.main.java.DomainModels.baseModel;
+
 /**
  * Created by travismartin on 15-10-22.
  */
-class sessionData
+public class sessionData extends baseModel
 {
 
     private static sessionData instance;
@@ -26,5 +28,11 @@ class sessionData
     private void destroySession()
     {
         this.instance = null;
+    }
+
+    @Override
+    public void handleEvent()
+    {
+
     }
 }

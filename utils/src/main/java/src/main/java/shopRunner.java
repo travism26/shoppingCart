@@ -1,4 +1,4 @@
-package src.main.java.Messages;
+package src.main.java;
 
 /**
  * Created by travismartin on 15-10-27.
