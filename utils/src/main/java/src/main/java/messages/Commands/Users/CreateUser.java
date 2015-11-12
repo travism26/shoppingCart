@@ -20,4 +20,10 @@ public class CreateUser implements IEvent
         this.lastName = lastName;
         this.email = email;
     }
+
+    @Override
+    public String eventName()
+    {
+        return "CreateUser()";
+    }
 }

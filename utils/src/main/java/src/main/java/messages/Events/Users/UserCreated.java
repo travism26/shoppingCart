@@ -19,4 +19,10 @@ public class UserCreated implements IEvent
         this.lastName = lastName;
         this.email = email;
     }
+
+    @Override
+    public String eventName()
+    {
+        return "UserCreated();";
+    }
 }

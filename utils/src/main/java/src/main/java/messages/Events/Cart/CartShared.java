@@ -7,4 +7,9 @@ import src.main.java.Messages.IEvent;
  */
 public class CartShared implements IEvent
 {
+    @Override
+    public String eventName()
+    {
+        return "CartShared();";
+    }
 }

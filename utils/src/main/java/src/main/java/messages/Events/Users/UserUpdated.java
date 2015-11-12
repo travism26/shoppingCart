@@ -7,4 +7,9 @@ import src.main.java.Messages.IEvent;
  */
 public class UserUpdated implements IEvent
 {
+    @Override
+    public String eventName()
+    {
+        return "UserUpdated()";
+    }
 }

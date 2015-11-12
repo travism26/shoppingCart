@@ -22,7 +22,7 @@ public class EventRaised
 
     public static void RaiseEvent(IEvent event)
     {
-        System.out.println("Fire Event");
+        System.out.println("Fire Event: " + event.eventName());
     }
 
     public static void clearErrors()

@@ -20,15 +20,12 @@ public class User extends baseModel
     private User(String username, String firstName, String lastName, String email)
     {
         //should create a global event.
-        //RaiseEvent(Model, Some Data, Some Data, Some Data);
-        //OR
-        //RaiseEvent(Model, IMandatoryData, IOptionalData);
-        //RaiseEvent();
+        //RaiseEvent(Event);
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        RaiseEvent(new CreateUser(id, username, firstName, lastName,email));
+        RaiseEvent(new CreateUser(id, username, firstName, lastName, email));
     }
 
     public static User createUser(String username, String firstName, String lastName, String email){
