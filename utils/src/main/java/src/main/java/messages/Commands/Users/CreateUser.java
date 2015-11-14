@@ -1,8 +1,8 @@
 package src.main.java.Messages.Commands.Users;
 
-import src.main.java.InputHandlers.IInputHandler;
-import src.main.java.InputHandlers.Users.UserInputHandler;
 import src.main.java.Messages.IEvent;
+import src.main.java.Repository.ICreateUserRepo;
+import src.main.java.Repository.globalRepo;
 
 /**
  * Created by travismartin on 2015-11-09.
@@ -26,4 +26,18 @@ public class CreateUser implements IEvent
     {
         return "CreateUser()";
     }
+
+    @Override
+    public void handleEvent()
+    {
+        globalRepo.createRepo.addUser(this);
+        //repository.addUser(new CreateUser(this.id, this.username, this.firstName, this.lastName, this.email));
+    }
+
+    public int getId()
+    {
+        return id;
+    }
+
+
 }

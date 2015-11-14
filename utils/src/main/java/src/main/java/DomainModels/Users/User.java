@@ -1,10 +1,7 @@
 package src.main.java.DomainModels.Users;
 
 import src.main.java.DomainModels.baseModel;
-import src.main.java.InputHandlers.IInputHandler;
-import src.main.java.InputHandlers.Users.UserInputHandler;
 import src.main.java.Messages.Commands.Users.CreateUser;
-import src.main.java.Messages.Events.Users.UserCreated;
 
 import static src.main.java.GlobalAttributes.EventRaised.RaiseEvent;
 
@@ -28,8 +25,12 @@ public class User extends baseModel
         RaiseEvent(new CreateUser(id, username, firstName, lastName, email));
     }
 
-    public static User createUser(String username, String firstName, String lastName, String email){
+    public User()
+    {
+    }
 
+    public static User createUser(String username, String firstName, String lastName, String email)
+    {
         return new User(username, firstName, lastName, email);
     }
 
@@ -79,7 +80,7 @@ public class User extends baseModel
         this.firstName = firstName;
     }
 
-    public long getId()
+    public int getId()
     {
         return id;
     }

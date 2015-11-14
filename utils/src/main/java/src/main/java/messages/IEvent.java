@@ -8,4 +8,6 @@ package src.main.java.Messages;
 public interface IEvent
 {
     public String eventName();
+
+    public void handleEvent();
 }

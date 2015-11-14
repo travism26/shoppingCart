@@ -25,4 +25,10 @@ public class UserCreated implements IEvent
     {
         return "UserCreated();";
     }
+
+    @Override
+    public void handleEvent()
+    {
+
+    }
 }

@@ -12,4 +12,10 @@ public class UserUpdated implements IEvent
     {
         return "UserUpdated()";
     }
+
+    @Override
+    public void handleEvent()
+    {
+
+    }
 }

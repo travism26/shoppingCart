@@ -12,4 +12,10 @@ public class CartShared implements IEvent
     {
         return "CartShared();";
     }
+
+    @Override
+    public void handleEvent()
+    {
+
+    }
 }
