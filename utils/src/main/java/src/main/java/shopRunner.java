@@ -23,7 +23,7 @@ public class shopRunner
         User testUser2 = new User("jessej","jo", "jo", "jo@coolio.com");
 
         System.out.println(testUser.getId()+ " "+ testUser2.getId());
-        //save the domain models
+        //save the domain models to our in memory DB
         userRepo.addUser(testUser);
         userRepo.addUser(testUser2);
 
