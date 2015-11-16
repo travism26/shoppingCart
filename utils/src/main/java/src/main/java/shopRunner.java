@@ -16,15 +16,14 @@ public class shopRunner
     {
         //repositories
         ICreateUserRepo createUserEvent = globalRepo.createRepo;
-        InMemoryUserRepo userRepo = new InMemoryUserRepo();
+        InMemoryUserRepo userRepo = globalRepo.userRepo;
 
-        //DOMAIN MODELS
-        User testUser = new User();
-        testUser.createUser("blahbalh","Travis", "blah", "blah@yup.com");
-        User testUser2 = new User();
-        testUser2.createUser("jessej","jo", "jo", "jo@coolio.com");
+        //DOMAIN MODELS and events fired.
+        User testUser = new User("blahbalh","Travis", "blah", "blah@yup.com");
+        User testUser2 = new User("jessej","jo", "jo", "jo@coolio.com");
 
-        //FIRE EVENT, see if the createUser event is fired.
+        System.out.println(testUser.getId()+ " "+ testUser2.getId());
+        //save the domain models
         userRepo.addUser(testUser);
         userRepo.addUser(testUser2);
 

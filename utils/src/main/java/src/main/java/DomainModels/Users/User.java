@@ -3,6 +3,8 @@ package src.main.java.DomainModels.Users;
 import src.main.java.DomainModels.baseModel;
 import src.main.java.Messages.Commands.Users.CreateUser;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 import static src.main.java.GlobalAttributes.EventRaised.RaiseEvent;
 
 /**
@@ -10,11 +12,13 @@ import static src.main.java.GlobalAttributes.EventRaised.RaiseEvent;
  */
 public class User extends baseModel
 {
-
+    private static final AtomicInteger count = new AtomicInteger(0);
     private String username, firstName, lastName, email;
     private int id;
+    private static int nextmember= 0;
 
-    private User(String username, String firstName, String lastName, String email)
+
+    public User(String username, String firstName, String lastName, String email)
     {
         //should create a global event.
         //RaiseEvent(Event);
@@ -22,6 +26,7 @@ public class User extends baseModel
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.id = nextmember++;
         RaiseEvent(new CreateUser(id, username, firstName, lastName, email));
     }
 
@@ -39,6 +44,8 @@ public class User extends baseModel
     {
 
     }
+    //need to change up the set* methods to fire the
+    //UserUpdated event. TBC
 
     public String getUsername()
     {
@@ -83,11 +90,6 @@ public class User extends baseModel
     public int getId()
     {
         return id;
-    }
-
-    public void setId(int id)
-    {
-        this.id = id;
     }
 
 }
