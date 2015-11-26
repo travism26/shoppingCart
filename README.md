@@ -10,4 +10,4 @@ Just trying the event sourcing pattern out, aim to have fully functional webapp.
  
  under development
  
- ## Phasing out java for clojoure. having issue with java :/
+## Phasing out java for clojoure. having issue with java :/
