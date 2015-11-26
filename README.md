@@ -8,4 +8,6 @@ Just trying the event sourcing pattern out, aim to have fully functional webapp.
  everything will be all over the place. Once I get a better handle on the pattern
  and how I would like it to work it will take its shape hopefully :) 
  
- under development, phasing out java for clojoure. having issue with java :/
+ under development
+ 
+ ## Phasing out java for clojoure. having issue with java :/
